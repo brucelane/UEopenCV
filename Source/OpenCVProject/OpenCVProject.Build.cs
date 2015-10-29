@@ -1,23 +1,24 @@
 // Copyright 1998-2015 Epic Games, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
-using System.IO;
+//using System.IO;
 
 public class OpenCVProject : ModuleRules
 {
-    private string ModulePath
-    {
-        get { return Path.GetDirectoryName(RulesCompiler.GetModuleFilename(this.GetType().Name)); }
-    }
-    private string ThirdPartyPath
-    {
-        get { return Path.GetFullPath(Path.Combine(ModulePath, "../../ThirdParty/")); }
-    }
+    //private string ModulePath
+    //{
+    //    get { return Path.GetDirectoryName(RulesCompiler.GetModuleFilename(this.GetType().Name)); }
+    //}
+    //private string ThirdPartyPath
+    //{
+    //    get { return Path.GetFullPath(Path.Combine(ModulePath, "../../ThirdParty/")); }"RHI", "RenderCore", "ShaderCore",
+    //}
 	public OpenCVProject(TargetInfo Target)
 	{
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "RHI", "RenderCore", "ShaderCore", "OpenCV" });
-        LoadOpenCV(Target);
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore",  "OpenCV" });
+        //LoadOpenCV(Target);
     }
+    /*
     public bool LoadOpenCV(TargetInfo Target)
     {
         bool isLibrarySupported = false;
@@ -76,4 +77,5 @@ public class OpenCVProject : ModuleRules
 
         return isLibrarySupported;
     }
+*/
 }
