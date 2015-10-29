@@ -9,7 +9,7 @@
 [Ii]ntermediate/
 [Pp]lugins/
 [Ss]aved/
-[Tt]hirdParty/
+ThirdParty/
 
 # User-specific files
 *.suo
